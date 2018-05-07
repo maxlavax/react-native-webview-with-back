@@ -135,7 +135,7 @@ class Webbrowser extends BaseComponent {
 
         return <Toolbar
             onBack={this.goBack}
-            onHome={this.goHome}
+            onHome={this.reload}
             onForward={this.goForward}
             backButtonEnabled={this.state.backButtonEnabled}
             forwardButtonEnabled={this.state.forwardButtonEnabled}
@@ -170,7 +170,7 @@ class Webbrowser extends BaseComponent {
                     { ...(this.state.jsCode ? {injectedJavaScript : this.state.jsCode} : {}) }
                 />
                 {this.renderToolbar()}
-                <Spinner visible={this.state.loading} />
+                {/* <Spinner visible={this.state.loading} animation={fade}/> */}
             </View>
         );
     }

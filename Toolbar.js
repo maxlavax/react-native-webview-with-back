@@ -49,7 +49,7 @@ class Toolbar extends BaseComponent {
                 onPress={this.state.onHome}>
                 <Image
                     style={this.buttonStyle()}
-                    source={require('./assets/images/home-outline.png')}
+                    source={require('./assets/images/refresh-empty.png')}
                 />
             </Button>
         );
