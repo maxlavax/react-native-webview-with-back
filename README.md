@@ -24,7 +24,7 @@ class SampleApp extends Component {
             
                 <Webbrowser
                     url="https://your-url.com"
-                    hideHomeButton={false}
+                    hideRefreshButton={false}
                     hideToolbar={false}
                     hideAddressBar={false}
                     hideStatusBar={false}
@@ -44,7 +44,7 @@ class SampleApp extends Component {
 * `hideAddressBar - bool` optional, hides the address bar / address input
 * `hideStatusBar - bool` optional, hides the status bar / site title
 * `hideToolbar - bool` optional, hides the toolbar (nav bar)
-* `hideHomeButton - bool` optional, hides just the home button from the toolbar
+* `hideRefreshButton - bool` optional, hides just the refresh button from the toolbar
 * `hideActivityIndicator - bool`optional, hides the activity indicator (loading) overlay 
 * `foregroundColor - string` optional, sets the forground color of text and icon elements
 * `backgroundColor - string` optional, sets the background color

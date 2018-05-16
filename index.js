@@ -27,7 +27,7 @@ const propTypes = {
     hideToolbar: PropTypes.bool,
     hideAddressBar: PropTypes.bool,
     hideStatusBar: PropTypes.bool,
-    hideHomeButton: PropTypes.bool,
+    hideRefreshButton: PropTypes.bool,
     hideActivityIndicator: PropTypes.bool,
     foregroundColor: PropTypes.string,
     backgroundColor: PropTypes.string,
@@ -44,7 +44,7 @@ const defaultProps = {
     hideToolbar: false,
     hideAddressBar: false,
     hideStatusBar: false,
-    hideHomeButton: false,
+    hideRefreshButton: false,
     hideActivityIndicator: false,
     onNavigationStateChange: ()=>{},
     onShouldStartLoadWithRequest: ()=>true,
@@ -139,7 +139,7 @@ class Webbrowser extends BaseComponent {
             onForward={this.goForward}
             backButtonEnabled={this.state.backButtonEnabled}
             forwardButtonEnabled={this.state.forwardButtonEnabled}
-            hideHomeButton={this.props.hideHomeButton}
+            hideRefreshButton={this.props.hideRefreshButton}
             foregroundColor={this.props.foregroundColor}
         />;
     }

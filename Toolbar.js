@@ -39,7 +39,7 @@ class Toolbar extends BaseComponent {
 
     renderHomeButton() {
 
-        if (this.props.hideHomeButton) {
+        if (this.props.hideRefreshButton) {
             return <View/>
         }
 
@@ -91,7 +91,7 @@ Toolbar.propTypes = {
     backButtonEnabled: PropTypes.bool,
     forwardButtonEnabled: PropTypes.bool,
     homeButtonEnabled: PropTypes.bool,
-    hideHomeButton: PropTypes.bool,
+    hideRefreshButton: PropTypes.bool,
     onBack: PropTypes.func,
     onHome: PropTypes.func,
     onForward: PropTypes.func,
@@ -102,7 +102,7 @@ Toolbar.defaultProps = {
     backButtonEnabled: false,
     forwardButtonEnabled: false,
     homeButtonEnabled: true,
-    hideHomeButton: false,
+    hideRefreshButton: false,
     onBack: ()=> {},
     onHome: ()=> {},
     onForward: ()=> {}
